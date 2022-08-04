@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biohazard Report</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <script src="javascript.js"></script>
 </head>
 <body>
-    <div class="picture">
+    <div class="picture-holder">
+        <img src="./images/daniel-lincoln-Mn3lkbSQRLY-unsplash.jpg" alt="apocalypse landscape" class="hero-img">
         <div class="logo-holder">
-
+            <img src="./images/noun-biohazard-185141.svg" alt="biohazard" class="logo">
+            <span class="title">Biohazard Report</span>
         </div>
         <div class="attribution">
 
@@ -19,34 +24,41 @@
     </div>
     <div class="container">
         <div class="hero-text">
-
+            <p>
+                Create an account to report the latest incidents in your area!
+            </p>
+            <p>
+                Also, get instant access to real time reports of zsombie sightings, provision allocations, safe corridors and more.
+                This is a life-saving opportunity you can't afford to miss!
+            </p>
         </div>
         <div class="form-card">
             <form>
                 <h2></h2>
-                <label for="name"></label>
+                <label for="name">First Name</label>
                 <input type="text">
-                <label for="lastName"></label>
+                <label for="lastName">Last Name</label>
                 <input type="text">
-                <label for="mail"></label>
+                <label for="mail">Email</label>
                 <input type="email">
-                <label for="phone"></label>
+                <label for="phone">Phone Number</label>
                 <input type="tel">
-                <label for="pass"></label>
+                <label for="pass"><Password/label>
                 <input type="password">
-                <label for="pass-confirm"></label>
+                <label for="pass-confirm">Confirm Password</label>
                 <input type="password">
             </form>
         </div>
+        <div class="submit-card">
+            <button type="submit">
+                Create Account
+            </button>
+            <p>
+                Already have an account? <a href="">Log in</a>
+            </p>
+        </div>
     </div>
-    <div class="submit-card">
-        <button type="submit">
-            Create Account
-        </button>
-        <p>
-            Already have an account? <a href="">Log in</a>
-        </p>
-    </div>
+    
     
 </body>
 </html>
