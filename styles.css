@@ -121,6 +121,12 @@ input:focus{
     border-width: 2px;
     box-shadow: 2px 2px 2px rgba(255, 109, 73, 0.514);
 }
+input:invalid{
+    outline: none;
+    border-color: red;
+    border-width: 1px;
+    box-shadow: 2px 2px 2px rgba(255, 109, 73, 0.514);
+}
 
 input.error {
     border-color: rgb(250, 0, 0);

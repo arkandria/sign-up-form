@@ -41,11 +41,11 @@
                     <div class="row">
                         <div class="inputs">
                             <label for="name">First Name</label>
-                            <input type="text" id="name">
+                            <input type="text" id="name" minlength="1" pattern="[a-zA-Z]+" title="Please use only letters">
                         </div>
                          <div class="inputs">
                             <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName">
+                            <input type="text" id="lastName" minlength="1" pattern="[a-zA-Z]+" title="Please use only letters">
                     
                         </div>
                     </div>
@@ -57,20 +57,20 @@
                     
                         <div class="inputs">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone">
+                            <input type="tel" id="phone" pattern="[0-9]+" title="Please use only numbers">
                     
                         </div>
                     </div>
                     <div class="row">
                         <div class="inputs">
                             <label for="pass">Password</label>
-                            <input type="password" id="pass" class="error">
-                            <span class="match">*Passwords do not match.</span>
+                            <input type="password" id="pass" class="error" name="password1" onkeyup="checkPassword()">
+                            <span class="match" id="match">*Passwords do not match.</span>
                         </div>
                     
                         <div class="inputs">
                             <label for="pass-confirm">Confirm Password</label>
-                            <input type="password" id="pass-confirm" class="error">
+                            <input type="password" id="pass-confirm" class="error" name="password2" onkeyup="checkPassword()">
                             
                         </div>
                     </div>
