@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biohazard Report</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,37 +17,64 @@
         <img src="./images/daniel-lincoln-Mn3lkbSQRLY-unsplash.jpg" alt="apocalypse landscape" class="hero-img">
         <div class="logo-holder">
             <img src="./images/noun-biohazard-185141.svg" alt="biohazard" class="logo">
-            <span class="title">Biohazard Report</span>
+            <span class="title">Bioha<span id="z">Z</span>ard Report</span>
         </div>
         <div class="attribution">
-
+            <p>Photo by Daniel Lincoln in <a href="https://unsplash.com/photos/Mn3lkbSQRLY">Unsplash</a></p>
         </div>
     </div>
     <div class="container">
         <div class="hero-text">
-            <p>
+            <h2>
                 Create an account to report the latest incidents in your area!
-            </p>
-            <p>
-                Also, get instant access to real time reports of zsombie sightings, provision allocations, safe corridors and more.
+            </h2>
+            <h2>
+                Also, get instant access to real time reports of zombie sightings, provision allocations, safe corridors and more.
                 This is a life-saving opportunity you can't afford to miss!
-            </p>
+            </h2>
         </div>
         <div class="form-card">
             <form>
-                <h2></h2>
-                <label for="name">First Name</label>
-                <input type="text">
-                <label for="lastName">Last Name</label>
-                <input type="text">
-                <label for="mail">Email</label>
-                <input type="email">
-                <label for="phone">Phone Number</label>
-                <input type="tel">
-                <label for="pass"><Password/label>
-                <input type="password">
-                <label for="pass-confirm">Confirm Password</label>
-                <input type="password">
+                <h2>Register now!</h2>
+
+                <div class="inputs-container">
+                    <div class="row">
+                        <div class="inputs">
+                            <label for="name">First Name</label>
+                            <input type="text" id="name">
+                        </div>
+                         <div class="inputs">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName">
+                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inputs">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail">
+                        </div>
+                    
+                        <div class="inputs">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inputs">
+                            <label for="pass">Password</label>
+                            <input type="password" id="pass" class="error">
+                            <span class="match">*Passwords do not match.</span>
+                        </div>
+                    
+                        <div class="inputs">
+                            <label for="pass-confirm">Confirm Password</label>
+                            <input type="password" id="pass-confirm" class="error">
+                            
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="submit-card">
